@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Snake Game</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="icon" href="Favicon.png">
+        <audio id="eat" src="eat.ogg"></audio>
+        <audio id="lose" src="lose.ogg"></audio>
+    </head>
+    <body style="background-color: #000000;">
+        <div class="text-center">
+            <canvas id="mainGame" width="500" height="500" style="border:2px solid #FFFFFF"></canvas>
+        </div>
+        <div class="p">
+            <select class="bs1" id="border" name="border">
+                <option value="Active">Border: Active</option> 
+                <option value="Inactive" selected>Border: Inactive</option>
+            </select>
+            <button class="bs2" id="inicio" type="button">Start</button>
+            <span class="bs3" id="score">Score: 0</span>
+        </div>
+        <div class="p">
+            <select class="bs4" id="speed" name="speed">
+                <option value="Slow">Speed: Slow</option> 
+                <option value="Medium"selected>Speed: Medium</option> 
+                <option value="Fast">Speed: Fast</option>
+            </select>
+            <select class="colorbs1" id="color" name="color">
+                <option value="Classic" selected>Color: Classic</option> 
+                <option value="Rainbow">Color: Rainbow</option>
+            </select>
+            <span class="bs5" id="time">Time: 00:00</span>
+        </div>
+        <!--<script src="board.js"></script>-->
+        <script src="game.js"></script>
+    </body>
+</html>
